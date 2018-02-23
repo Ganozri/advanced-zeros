@@ -24,9 +24,13 @@ for(var i=2;i<=base;i++)
        number = Math.floor(number/max);
        S = S + number;
      }
-         if(base>(max^2)&&base%(max^2)==0)
+         if(base>(max*max)&&base%(max*max)==0)
     {
     S=S/2;
+    }
+    if(base>(max*max)&&base%(max*max*max)==0)
+    {
+    S=S/1.5;
     }
  return (Math.floor(S));
 }

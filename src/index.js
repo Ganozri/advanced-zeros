@@ -24,5 +24,9 @@ for(var i=2;i<=base;i++)
        number = Math.floor(number/max);
        S = S + number;
      }
- return (S);
+         if(base>(max^2)&&base%(max^2)==0)
+    {
+    S=S/2;
+    }
+ return (Math.floor(S));
 }
